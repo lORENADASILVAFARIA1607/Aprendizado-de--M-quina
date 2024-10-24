@@ -1,0 +1,97 @@
+// Função para o jogo interativo ou quiz
+function iniciarJogo() {
+ // Lógica do jogo ou quiz
+}
+
+// Adicionar evento de clique para iniciar o jogo
+document.querySelector('.missao').addEventListener('click', iniciarJogo);
+```
+
+1. Desenvolver o conteúdo central sobre aprendizado de máquina.
+2. Criar o jogo interativo ou quiz.
+3. Adicionar estilos e interatividade.
+<section class="conteudo">
+ <h2>O que é Aprendizado de Máquina?</h2>
+ <p>Aprendizado de máquina é uma área da Inteligência Artificial que permite que os computadores aprendam com dados e experiências.</p>
+ <h2>Tipos de Aprendizado de Máquina</h2>
+ <ul>
+ <li>Aprendizado Supervisionado</li>
+ <li>Aprendizado Não Supervisionado</li>
+ <li>Aprendizado por Reforço</li>
+ </ul>
+</section>
+```
+_Desenvolvendo o Jogo Interativo:_
+
+Vamos criar um quiz simples. Adicione o seguinte código HTML dentro da seção `.missao`:
+```
+<div class="quiz">
+ <h2>Quiz de Aprendizado de Máquina</h2>
+ <form>
+ <label>Pergunta 1: O que é aprendizado de máquina?</label>
+ <input type="radio" name="pergunta1" value="a"> Aprendizado de máquina é uma área da IA que permite que os computadores aprendam com dados e experiências.
+ <input type="radio" name="pergunta1" value="b"> Aprendizado de máquina é uma área da IA que permite que os humanos aprendam com computadores.
+ <button>Enviar</button>
+ </form>
+</div>
+// Função para verificar resposta
+function verificarResposta() {
+ var resposta = document.querySelector('input[name="pergunta1"]:checked').value;
+ if (resposta === 'a') {
+ alert('Resposta correta!');
+ } else {
+ alert('Resposta incorreta!');
+ }
+}
+// Adicionar evento de clique para verificar resposta
+document.querySelector('.quiz button').addEventListener('click', verificarResposta);
+Atualize o código JavaScript para verificar as respostas adicionais:
+```
+// Função para verificar resposta
+function verificarResposta() {
+ var resposta1 = document.querySelector('input[name="pergunta1"]:checked').value;
+ var resposta2 = document.querySelector('input[name="pergunta2"]:checked').value;
+ var resposta3 = document.querySelector('input[name="pergunta3"]:checked').value;
+
+ if (resposta1 === 'a' && resposta2 === 'a' && resposta3 === 'a') {
+ alert('Respostas corretas!');
+ } else {
+ alert('Respostas incorretas!');
+ }
+}
+
+// Adicionar evento de clique para verificar resposta
+document.querySelector('.quiz button').addEventListener('click', verificarResposta);
+```
+_Adicionando Estilos:_
+
+Adicione estilos para o quiz:
+```
+.quiz {
+ background-color: #fff;
+ padding: 20px;
+ border: 1px solid #ddd;
+}
+
+.quiz label {
+ display: block;
+ margin-bottom: 10px;
+}
+
+.quiz input[type="radio"] {
+ margin-right: 10px;
+}
+
+.quiz button {
+ background-color: #4CAF50;
+ color: #fff;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.quiz button:hover {
+ background-color: #3e8e41;
+}
+```
