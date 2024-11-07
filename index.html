@@ -47,30 +47,4 @@
         <button>Enviar</button>
         </form>
        </div>
-       // Função para verificar resposta
-       function verificarResposta() {
-        var resposta = document.querySelector('input[name="pergunta1"]:checked').value;
-        if (resposta === 'a') {
-        alert('Resposta correta!');
-        } else {
-        alert('Resposta incorreta!');
-        }
-       }
-       // Adicionar evento de clique para verificar resposta
-       document.querySelector('.quiz button').addEventListener('click', verificarResposta);
-       Atualize o código JavaScript para verificar as respostas adicionais:
-    // Função para verificar resposta
-       function verificarResposta() {
-        var resposta1 = document.querySelector('input[name="pergunta1"]:checked').value;
-        var resposta2 = document.querySelector('input[name="pergunta2"]:checked').value;
-        var resposta3 = document.querySelector('input[name="pergunta3"]:checked').value;
        
-        if (resposta1 === 'a' && resposta2 === 'a' && resposta3 === 'a') {
-        alert('Respostas corretas!');
-        } else {
-        alert('Respostas incorretas!');
-        }
-       }
-     // Adicionar evento de clique para verificar resposta
-       document.querySelector('.quiz button').addEventListener('click', verificarResposta);
-       ```
