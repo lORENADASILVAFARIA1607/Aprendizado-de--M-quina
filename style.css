@@ -6,7 +6,7 @@ body {
 }
 
 header {
- background-color: #f0f0f0;
+ background-color: #da1a1a;
  padding: 20px;
  text-align: center;
 }
@@ -19,19 +19,19 @@ main {
 }
 
 .missao {
- background-color: #fff;
+ background-color: #d30707;
  padding: 20px;
- border: 1px solid #ddd;
+ border: 1px solid #cf4343;
 }
 
 footer {
- background-color: #f0f0f0;
+ background-color: #c96464;
  padding: 10px;
  text-align: center;
 }quiz {
-    background-color: #fff;
+    background-color: #b90606;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #b45858;
    }
    
    .quiz label {
